@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feasto</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="section-m1">
+    <!-- -------------hero section------------------- -->
+    <section class="hero-section">
+        <section class="hero-contact">
+            <p>
+                <i class="fa-solid fa-phone fa-sm" style="color: #b1ababd9;"></i>
+                + 1235 2355 98
+            </p>
+
+            <p>
+                <i class="fa-solid fa-paper-plane fa-sm" style="color: #b1ababd9;"></i>
+                youremail@email.com
+
+            </p>
+
+            <p>
+
+                Open hours: Monday - Sunday 8:00AM - 9:00PM
+            </p>
+        </section>
+
+        <nav class="navbar section-p1">
+            <div class="logo">
+                <i class="fa-solid fa-utensils fa-2xl" style="color: #d67307;padding:15px"></i>
+                <h2 class="text-[#d67307] text-3xl px-4">FEASTO</h2>
+            </div>
+
+            <div class="menus px-8">
+                <li><a class="active" href="./index.html">HOME</a></li>
+                <li><a href="./about.html">ABOUT US</a></li>
+                <li><a href="./menu.html">MENU</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <div class="cart-notif-div">
+                    <i class="fa-solid fa-bucket fa-xl" id="cart-icon" ></i>
+                    <span class="notification">0</span>                    
+                </div>
+            </div>
+            
+        </nav>
+
+        <section class="hero-content section-p1">
+            <div class="hero-text">
+                <h1 class="text-[70px]">Enjoy Our Delicious Meal</h1>
+                <h4 class="text-[20px]">
+                    Indulge in a fine dining experience where quality meets taste. 
+                    Our menu is carefully curated to offer a variety of flavors that delight every food lover. 
+                    Come and enjoy exceptional service with unforgettable dishes.
+                </h4>
+                <button class="normalbtn">BOOK A TABLE</button>
+            </div>
+            <div class="hero-img">
+                <img src="./media/hero.png" alt="food1">
+            </div>   
+        </section>
+
+        
+    </section>
+    <!-- ----------------------cart------------------------- -->
+    <div class="cart">
+        <h2 class="cart-title">Your Cart</h2>
+        <div class="cart-content">
+            <!-- <div class="cart-box">
+                <img src="./media/menus/burger.webp" alt="cartimg">
+                <div class="cart-details">
+                    <h2 class="cart-item-title">Burger</h2>
+                    <span class="cart-price">$150</span>
+                    <div class="cart-quantity">
+                        <button id="decrement">-</button>
+                        <button class="number">1</button>
+                        <button id="increment">+</button>
+                    </div>
+                </div>
+                <i class="fa-solid fa-trash-can cart-remove"></i>
+            </div> -->
+        </div>
+
+        <div class="total">
+            <div class="total-title">Total</div>
+            <div class="total-price">$0</div>
+        </div>
+        <button class="orderbtn normalbtn">Order</button>
+        <i class="fa-solid fa-xmark" id="cart-close"></i>
+    </div>
+    
+    <!-- ---------------smalldivs-------------------------- -->
+    <section class="smalldivs section-p1">
+        <div class="sdiv">
+            <i class="icon1 fa-solid fa-user-tie fa-2xl"></i>
+            <h5 class="text-[40px] font-bold ">Master Chefs</h5>
+            <p>Expert chefs crafting delicious dishes with passion and skill</p>
+        </div>
+
+        <div class="sdiv">
+            <i class="icon1 fa-solid fa-utensils fa-2xl"></i>
+            <h5 class="text-[40px] font-bold">Quality Food</h5>
+            <p>Fresh ingredents and top quality meals served every day</p>
+        </div>
+
+        <div class="sdiv">
+            <i class="icon1 fa-solid fa-cart-plus fa-2xl"></i>
+            <h5 class="text-[40px] font-bold">Online Order</h5>
+            <p>Order your favourite food easily with fast delivery</p>
+            
+        </div>
+
+        <div class="sdiv">
+            <i class="icon1 fa-solid fa-headset fa-2xl"></i>
+            <h5 class="text-[40px] font-bold">24/7 <br>Service</h5>
+            <p>We are always here to support you anytime</p>
+        
+        </div>
+    </section>
+    <!-- ------------------specialties------------------------ -->
+    <section class="specialties section-p1">
+        <h3 class="text-[70px] text-extrabold italic text-(--orange)">Specialties</h3>
+        <h4 class="text-[50px] text-bold">Food Menu</h4>
+        <div class="bigfoodmenus">
+            <div class="foodmenus" id="Chicken-Burger">
+                <div class="fimage">
+                    <img src="./media/menus/burger.webp" alt="food">
+                </div>
+                <div class="fcontent border-t">
+                    <h3 class="text-[30px] itemtitle ">Chicken Burger </h3>
+                    <span class="price">$150</span>
+                    <p>Perfectly grilled chicken with smoky flavor and delicious seasoning.</p>
+                    <button class="normalbtn add-cart">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="foodmenus" id="Chicken-steak">
+                <div class="fimage">
+                    <img src="./media/menus/chicken-steak.jpg" alt="food">
+                </div>
+                <div class="fcontent border-t border-r">
+                    <h3 class="text-[30px] itemtitle">Chicken steak </h3>
+                    <span class="price">$150</span>
+                    <p>Tender chicken steak served with savory sauce and fresh sides.</p>
+                    <button class="normalbtn add-cart">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="foodmenus" id="Fried-Chicken">
+                 <div class="fcontent border-l">
+                    <h3 class="text-[30px] itemtitle">Fried Chicken </h3>
+                    <span class="price">$200</span>
+                    <p>Crunchy, juicy, and irresistibly tasty fried chicken in every bite.</p>
+                    <button class="normalbtn add-cart">Add to Cart</button>
+                </div>
+
+                <div class="fimage">
+                    <img src="./media/menus/fried-chicken.webp" alt="food">
+                </div>
+            </div>
+
+            <div class="foodmenus" id="Pasta">
+                 <div class="fcontent">
+                    <h3 class="text-[30px] itemtitle ">Pasta </h3>
+                    <span class="price">$70</span>
+                    <p>Creamy and flavorful pasta cooked to perfection with herbs.</p>
+                    <button class="normalbtn add-cart">Add to Cart</button>
+                </div>
+
+                <div class="fimage">
+                    <img src="./media/menus/pasta.jpg" alt="food">
+                </div>
+            </div>
+
+            <div class="foodmenus" id="Pizza">
+                <div class="fimage">
+                    <img src="./media/menus/pizza.jpg" alt="food">
+                </div>
+                <div class="fcontent border-b">
+                    <h3 class="text-[30px] itemtitle">Pizza </h3>
+                    <span class="price">$100</span>
+                    <p>Freshly baked pizza topped with cheese and flavorful ingredients.</p>
+                    <button class="normalbtn add-cart">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="foodmenus" id="Salad">
+                <div class="fimage">
+                    <img src="./media/menus/salad.jpg" alt="food">
+                </div>
+                <div class="fcontent border-r border-b ">
+                    <h3 class="text-[30px] itemtitle">Salad </h3>
+                    <span class="price">$350</span>
+                    <p>Healthy salad prepared with fresh ingredients and rich flavors.</p>
+                    <button class="normalbtn add-cart">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ------------------------chefs section------------------- -->
+
+    <section class="chefs section-p1">
+        <h3 class="text-[70px] text-extrabold italic text-(--orange)">Our Master Chefs</h3>
+        <div class="chefbigdiv">
+            <div class="chefdiv">
+                <img src="./media/owner.webp" alt="chef">
+                <h3 class="text-[40px] font-bold">John Smooth</h3>
+                <p>Restaurant Owner</p>
+                <div class="socialmediaicon chefsocial">
+                    <i class="fa-brands fa-twitter fa-xl"></i>
+                    <i class="fa-brands fa-facebook-f fa-xl" ></i>
+                    <i class="fa-brands fa-linkedin-in fa-xl" ></i>
+                    <i class="fa-brands fa-instagram fa-xl"></i>
+                </div>
+            </div>
+
+            <div class="chefdiv">
+                <img src="./media/head_chef.webp" alt="chef">
+                <h3 class="text-[40px] font-bold">Kharl Branyt</h3>
+                <p>Head Chef</p>
+                <div class="socialmediaicon chefsocial">
+                    <i class="fa-brands fa-twitter fa-xl"></i>
+                    <i class="fa-brands fa-facebook-f fa-xl" ></i>
+                    <i class="fa-brands fa-linkedin-in fa-xl" ></i>
+                    <i class="fa-brands fa-instagram fa-xl"></i>
+                </div>
+            </div>
+
+            <div class="chefdiv">
+                <img src="./media/chef1.jpg" alt="chef">
+                <h3 class="text-[40px] font-bold">Luke Simon</h3>
+                <p>chef</p>
+                <div class="socialmediaicon chefsocial">
+                    <i class="fa-brands fa-twitter fa-xl"></i>
+                    <i class="fa-brands fa-facebook-f fa-xl" ></i>
+                    <i class="fa-brands fa-linkedin-in fa-xl" ></i>
+                    <i class="fa-brands fa-instagram fa-xl"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ---------------------------footer--------------------- -->
+    <footer class="section-p1 secfooter">
+        <div class="footercontent">
+            <div class="footdivs">
+                <h3 class="text-[40px] text-extrabold italic text-(--orange)">Company</h3>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Contact Us</a></li>
+                <li><a href="">Reservation</a></li>
+                <li><a href="">Privacy Policy</a></li>
+                <li><a href="">Terms & Condition</a></li>
+            </div>
+
+            <div>
+                <h3 class="text-[40px] text-extrabold italic text-(--orange)">Contact</h3>
+                <p>
+                    <i class="fa-solid fa-location-dot" style="color: rgb(255, 255, 255);"></i>
+                    123 Street, New York, USA
+                </p>
+                <p>
+                    <i class="fa-solid fa-phone" style="color: rgb(255, 255, 255);"></i>
+                    +012 345 67890
+                </p>
+                <p>
+                    <i class="fa-solid fa-envelope" style="color: rgb(255, 255, 255);"></i>
+                    info@example.com
+                </p>
+                <div class="socialmediaicon">
+                    <i class="fa-brands fa-twitter fa-xl"></i>
+                    <i class="fa-brands fa-facebook-f fa-xl" ></i>
+                    <i class="fa-brands fa-linkedin-in fa-xl" ></i>
+                    <i class="fa-brands fa-instagram fa-xl"></i>
+                </div>
+                
+            </div>
+
+            <div>
+                <h3 class="text-[40px] text-extrabold italic text-(--orange)">Opening</h3>
+                <p>Monday - Saturday <br>
+                09AM - 09PM</p>
+                <p>Sunday <br>
+                10AM - 08PM</p>
+            </div>
+
+            <div class="newsletter">
+                <h3 class="text-[40px] text-extrabold italic text-(--orange)">Newsletter</h3>
+                <p>Get updates, offers, and more-straight to your inbox</p>
+                <input type="email" placeholder="Your Email" style=" color: #000; font-weight: 400;">
+                <button class="normalbtn">SIGNUP</button>
+            </div>
+        </div>
+        <p>Copyright ©2026 All rights reserved | This template is made with  by Latha</p>
+    </footer>
+
+    <script src="effect.js"></script>
+</body>
+</html>
