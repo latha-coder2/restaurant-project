@@ -131,7 +131,7 @@ const updateCartnotification=(change => {
     }
 
 });
-
+// ------------------nav-menus-------------
 
 const menuicon = document.querySelector(".menubar");
 const menus = document.querySelector(".menus");
@@ -140,4 +140,10 @@ const navclose = document.querySelector("#nav-close");
 menuicon.addEventListener("click",()=>{menus.classList.add("active")});
 navclose.addEventListener("click",()=>{menus.classList.remove("active")});
 
+// -----------------------user-icon-------------------
+const usericon = document.querySelector("#user-icon");
+const userlogin = document.querySelector(".user-login");
+const loginclose = document.querySelector("#login-close");
 
+usericon.addEventListener("click",()=>{userlogin.classList.add("active")});
+loginclose.addEventListener("click",()=>{userlogin.classList.remove("active")});
