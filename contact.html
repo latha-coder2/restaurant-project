@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feasto</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="section-m1">
+    <!-- -------------hero section------------------- -->
+    <section class="child-hero-section">
+        <section class="hero-contact">
+            <p>
+                <i class="fa-solid fa-phone fa-sm" style="color: #b1ababd9;"></i>
+                + 1235 2355 98
+            </p>
+
+            <p>
+                <i class="fa-solid fa-paper-plane fa-sm" style="color: #b1ababd9;"></i>
+                youremail@email.com
+
+            </p>
+
+            <p>
+
+                Open hours: Monday - Sunday 8:00AM - 9:00PM
+            </p>
+        </section>
+
+        <nav class="navbar section-p1">
+            <div class="logo">
+                <i class="fa-solid fa-utensils fa-2xl" style="color: #d67307;padding:15px"></i>
+                <h2 class="text-[#d67307] text-3xl px-4">FEASTO</h2>
+            </div>
+
+            
+            
+            <div class="menus px-8">
+                <i class="fa-solid fa-xmark"  id="nav-close"></i>
+                <li><a  href="./index.html">HOME</a></li>
+                <li><a  href="./about.html">ABOUT US</a></li>
+                <li><a href="./menu.html">MENU</a></li>
+                <li><a id="active" href="contact.html">CONTACT</a></li>
+            </div>
+            <div class="cart-notif-div">
+                <i class="fa-solid fa-bucket fa-xl" id="cart-icon" ></i>
+                <span class="notification">0</span>                    
+            </div>
+            <label class="menubar">
+            <i class="fa-solid fa-bars fa-xl" id="menuicon"></i>
+            </label>
+        </nav>
+
+        <section class="child-hero-content section-p1" id="hero">
+            <h1 class="child-hero-text text-[70px] text-extrabold italic  text-white">
+               CONTACT US
+            </h1>   
+        </section>
+
+        
+    </section>
+    <!-- ----------------------cart------------------------- -->
+    <div class="cart">
+        <h2 class="cart-title">Your Cart</h2>
+        <div class="cart-content">
+            <!-- <div class="cart-box">
+                <img src="./media/menus/burger.webp" alt="cartimg">
+                <div class="cart-details">
+                    <h2 class="cart-item-title">Burger</h2>
+                    <span class="cart-price">$150</span>
+                    <div class="cart-quantity">
+                        <button id="decrement">-</button>
+                        <button class="number">1</button>
+                        <button id="increment">+</button>
+                    </div>
+                </div>
+                <i class="fa-solid fa-trash-can cart-remove"></i>
+            </div> -->
+        </div>
+
+        <div class="total">
+            <div class="total-title">Total</div>
+            <div class="total-price">$0</div>
+        </div>
+        <button class="orderbtn normalbtn">Order</button>
+        <i class="fa-solid fa-xmark" id="cart-close"></i>
+    </div>
+    
+    
+    <a href="#hero" class="arrow"><i class="fa-solid fa-arrow-up-long fa-lg" style="color: rgb(14, 33, 48);"></i></a>
+    <section class="smalldivs section-p1">
+        <div class="sdiv">
+            <i class="icon1 fa-solid fa-user-tie fa-2xl"></i>
+            <h5 class="text-[40px] font-bold ">Master Chefs</h5>
+            <p>Expert chefs crafting delicious dishes with passion and skill</p>
+        </div>
+
+        <div class="sdiv">
+            <i class="icon1 fa-solid fa-utensils fa-2xl"></i>
+            <h5 class="text-[40px] font-bold">Quality Food</h5>
+            <p>Fresh ingredents and top quality meals served every day</p>
+        </div>
+
+        <div class="sdiv">
+            <i class="icon1 fa-solid fa-cart-plus fa-2xl"></i>
+            <h5 class="text-[40px] font-bold">Online Order</h5>
+            <p>Order your favourite food easily with fast delivery</p>
+            
+        </div>
+
+        <div class="sdiv">
+            <i class="icon1 fa-solid fa-headset fa-2xl"></i>
+            <h5 class="text-[40px] font-bold">24/7 <br>Service</h5>
+            <p>We are always here to support you anytime</p>
+        
+        </div>
+    </section>
+    
+    <!-- ------------------contact us------------------------ -->
+    <section class="contactus-section">
+        <div class="reserve" >
+            <h3 class="text-[70px] text-extrabold italic  p-6">
+                Reservation
+            </h3>
+
+            <form class="booking">
+                <div>
+                    <label>Your Name<span>*</span></label>
+                    <input type="text" placeholder="Enter your name">
+                </div>
+
+                <div>
+                    <label >Your Email</label>
+                    <input type="email"placeholder="Enter your email">
+                </div>
+
+                <div>
+                    <label >Your Number<span>*</span></label>
+                    <input type="tel"placeholder="Enter your mobile number" >
+                </div>
+
+                <div>
+                    <label >Members<span>*</span></label>
+                    <input type="number" placeholder="Enter no. of Guests">
+                </div>
+
+                <div>
+                    <label >Message</label>
+                    <input type="text" placeholder="Message">
+                </div>
+                <button class="normalbtn booktable">Book A Table</button>
+
+            </form>
+
+        </div>
+
+        
+
+
+
+    </section>
+    
+    <!-- ---------------------------footer----------------------->
+    <footer class="section-p1 secfooter">
+        <div class="footercontent">
+            <div class="footdivs">
+                <h3 class="text-[40px] text-extrabold italic text-(--orange)">Company</h3>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Contact Us</a></li>
+                <li><a href="">Reservation</a></li>
+                <li><a href="">Privacy Policy</a></li>
+                <li><a href="">Terms & Condition</a></li>
+            </div>
+
+            <div>
+                <h3 class="text-[40px] text-extrabold italic text-(--orange)">Contact</h3>
+                <p>
+                    <i class="fa-solid fa-location-dot" style="color: rgb(255, 255, 255);"></i>
+                    123 Street, New York, USA
+                </p>
+                <p>
+                    <i class="fa-solid fa-phone" style="color: rgb(255, 255, 255);"></i>
+                    +012 345 67890
+                </p>
+                <p>
+                    <i class="fa-solid fa-envelope" style="color: rgb(255, 255, 255);"></i>
+                    info@example.com
+                </p>
+                <div class="socialmediaicon">
+                    <i class="fa-brands fa-twitter fa-xl"></i>
+                    <i class="fa-brands fa-facebook-f fa-xl" ></i>
+                    <i class="fa-brands fa-linkedin-in fa-xl" ></i>
+                    <i class="fa-brands fa-instagram fa-xl"></i>
+                </div>
+                
+            </div>
+
+            <div>
+                <h3 class="text-[40px] text-extrabold italic text-(--orange)">Opening</h3>
+                <p>Monday - Saturday <br>
+                09AM - 09PM</p>
+                <p>Sunday <br>
+                10AM - 08PM</p>
+            </div>
+
+            <div class="newsletter">
+                <h3 class="text-[40px] text-extrabold italic text-(--orange)">Newsletter</h3>
+                <p>Get updates, offers, and more-straight to your inbox</p>
+                <input type="email" placeholder="Your Email" style=" color: #000; font-weight: 400;">
+                <button class="normalbtn">SIGNUP</button>
+            </div>
+        </div>
+        <p>Copyright ©2026 All rights reserved | This template is made with  by Latha</p>
+    </footer>
+
+    <script src="effect.js"></script>
+</body>
+</html>

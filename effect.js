@@ -1,3 +1,5 @@
+// --------------------nav-scroll-------------------------
+
 window.addEventListener('scroll',()=>{
     const navbar = document.querySelector('.navbar');
     if(navbar){
@@ -15,6 +17,7 @@ window.addEventListener('scroll',()=>{
     }
 });
 
+// ------------------carticon&closeicon----------------------
 
 const carticon = document.querySelector("#cart-icon");
 const cart = document.querySelector(".cart");
@@ -128,5 +131,13 @@ const updateCartnotification=(change => {
     }
 
 });
+
+
+const menuicon = document.querySelector(".menubar");
+const menus = document.querySelector(".menus");
+const navclose = document.querySelector("#nav-close");
+
+menuicon.addEventListener("click",()=>{menus.classList.add("active")});
+navclose.addEventListener("click",()=>{menus.classList.remove("active")});
 
 

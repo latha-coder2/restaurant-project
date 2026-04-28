@@ -35,20 +35,25 @@
                 <h2 class="text-[#d67307] text-3xl px-4">FEASTO</h2>
             </div>
 
+            
+            
             <div class="menus px-8">
-                <li><a class="active" href="./index.html">HOME</a></li>
+                <i class="fa-solid fa-xmark"  id="nav-close"></i>
+                <li><a id="active" href="./index.html">HOME</a></li>
                 <li><a href="./about.html">ABOUT US</a></li>
                 <li><a href="./menu.html">MENU</a></li>
                 <li><a href="contact.html">CONTACT</a></li>
-                <div class="cart-notif-div">
-                    <i class="fa-solid fa-bucket fa-xl" id="cart-icon" ></i>
-                    <span class="notification">0</span>                    
-                </div>
             </div>
-            
+            <div class="cart-notif-div">
+                <i class="fa-solid fa-bucket fa-xl" id="cart-icon" ></i>
+                <span class="notification">0</span>                    
+            </div>
+            <label class="menubar">
+            <i class="fa-solid fa-bars fa-xl" id="menuicon"></i>
+            </label>
         </nav>
 
-        <section class="hero-content section-p1">
+        <section class="hero-content section-p1"id="hero">
             <div class="hero-text">
                 <h1 class="text-[70px]">Enjoy Our Delicious Meal</h1>
                 <h4 class="text-[20px]">
@@ -56,7 +61,7 @@
                     Our menu is carefully curated to offer a variety of flavors that delight every food lover. 
                     Come and enjoy exceptional service with unforgettable dishes.
                 </h4>
-                <button class="normalbtn">BOOK A TABLE</button>
+                <button class="normalbtn"><a href="./contact.html">BOOK A TABLE</a></button>
             </div>
             <div class="hero-img">
                 <img src="./media/hero.png" alt="food1">
@@ -93,6 +98,8 @@
     </div>
     
     <!-- ---------------smalldivs-------------------------- -->
+    
+     <a href="#hero" class="arrow"><i class="fa-solid fa-arrow-up-long fa-lg" style="color: rgb(14, 33, 48);"></i></a>
     <section class="smalldivs section-p1">
         <div class="sdiv">
             <i class="icon1 fa-solid fa-user-tie fa-2xl"></i>
