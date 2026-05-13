@@ -7,11 +7,11 @@
 }
 
 .section-p1{
-    padding: 20px 80px;
+    padding: 20px 5%;
 }
 
 .section-m1{
-    margin: 0px 80px;
+    margin: 0px 5%;
 }
 
 :root{
@@ -65,21 +65,27 @@
 
 body{
     background-color: var(--bgblue);
+    max-width: 100%;;
+   
 }
 
 .navbar{
-    height:60px;
+    width:100%;
+    max-width: 100vw;
     background-color: transparent;
-    overflow: hidden;
     transition: all 0.3s ease-in-out;
+    display: flex;
+    justify-content: space-between; /* Space-around thavirka */
+    align-items: center;
+    padding: 15px 20px; 
 }
 .scrolled{
     position: fixed;
-    top:0px;
+    top:0;
     left:0;
     right:0;
     width:100%;
-    z-index:999;
+    z-index:99999;
     background-color: black;
 }
 #nav-close{
@@ -114,10 +120,11 @@ body{
 }
 
 .menus{
-    /* position: absolute; */
-    width:50%; 
+    display: flex;
     justify-content: space-between;    
-
+    /* Small/Medium screens-il width: 50% thandhal text modhi side scroll varum */
+    width: auto; 
+    gap: 20px;
 } 
 
 #user-icon{
@@ -145,7 +152,7 @@ body{
 #login-close{
     position:absolute;
     top:80px;
-    left:20px;
+    right:20px;
     font-size: 20px;
     cursor:pointer;
 }
@@ -801,9 +808,9 @@ body{
     margin: 0px 0px;
     }
     
-    .section-p1{
-        padding: 20px ;
-    }
+    .section-p1 {
+    padding: 20px;
+}
 
     .hero-section {
    
@@ -824,16 +831,17 @@ body{
     margin: 0px 0px;
     }
 
+    .section-p1 {
+    padding: 40px;
+}
+
     .smalldivs {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-    .section-p1{
-    padding: 40px 20px;
-    }
-
+   
     .sdiv {
     width: 50%;
 
@@ -847,6 +855,9 @@ body{
    
     height: 130vh;
     
+}
+.navbar{
+    padding: 15px;
 }
 
 .chefbigdiv {
@@ -867,12 +878,31 @@ body{
 .about-div-text{
     width:100%;
 }
+
+.img2 {
+    
+    left: 6px;
+    top: 27px;
+}
+
+.img3 {
+    left: 40px;  
+}
+
+.img4 {
+   
+    left: 47px;
+    top: 34px;
+    width:48%;
+    
+}
+
 }
 
 @media screen and ( width < 450px)  {
 
     .section-p1{
-    padding: 40px 40px;
+    padding: 20px;
     }
 
     .section-m1{
@@ -915,6 +945,20 @@ body{
     justify-content: center;
 }
 
+.img3 {
+    left: 33px;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.img4 {
+    left: 40px;
+    top: 34px;
+    width:49.5%;
+    
+}
 .footercontent {
     
     justify-content: center;
@@ -990,15 +1034,15 @@ body{
 
 
 .navbar{
-    padding:40px;
+    padding:10px;
     display: flex;
-    flex-wrap: wrap;
+   
     justify-content: space-between;
     height:70px;
 }
 
 
-.scrolled {
+/* .scrolled {
     position: fixed;
     top: 0px;
     left: 0;
@@ -1006,6 +1050,26 @@ body{
     width: 100%;
     z-index: 9999;
     background-color: black;
+} */
+.menus {
+    width: 250px;  
 }
 
+.cart {
+    
+    width: 250px;
+}
+
+.user-login {
+    
+    width: 250px;
+    
+}
+
+.scrolled{
+  
+    z-index:9999;
+}
+   
 } 
+

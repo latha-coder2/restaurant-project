@@ -6,7 +6,7 @@ window.addEventListener('scroll',()=>{
         const scrollpos = window.scrollY;
         console.log(scrollpos);
    
-        if(window.scrollY > 300){
+        if(window.scrollY > 50){
             navbar.classList.add('scrolled');
         }
         else{
