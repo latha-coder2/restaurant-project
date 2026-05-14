@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+
+<body class="register-page">
+
+    <div class="register-container">
+
+        <form class="register-form">
+
+            <h1 class="register-title">Create Account </h1>
+
+            <p class="register-subtitle">
+                Create your account to continue
+            </p>
+
+
+            <label class="register-label">Full Name</label>
+
+            <input type="text" placeholder="Enter your name" class="register-input" id="regName">
+
+
+            <label class="register-label">Email Address</label>
+
+            <input type="email" placeholder="Enter your email" class="register-input" id="regEmail">
+
+
+            <label class="register-label">Password</label>
+
+            <input type="password" placeholder="Enter password" class="register-input" id="regPassword">
+
+
+            <button type="button" class="register-btn" onclick="registerUser()"> Register</button>
+
+
+            <p class="register-bottom-text"> Already have an account?<a href="index.html" class="register-link"> Login here</a></p>
+
+        </form>
+
+    </div>
+    <script src="./effect.js"></script>
+</body>
+</html>

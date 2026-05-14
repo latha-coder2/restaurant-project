@@ -147,3 +147,109 @@ const loginclose = document.querySelector("#login-close");
 
 usericon.addEventListener("click",()=>{userlogin.classList.add("active")});
 loginclose.addEventListener("click",()=>{userlogin.classList.remove("active")});
+
+
+
+// ===== REGISTER FUNCTION =====
+
+function registerUser(){
+   
+
+    let name =document.getElementById("regName").value;
+    let email = document.getElementById("regEmail").value;
+    let password = document.getElementById("regPassword").value;
+
+    if(name === "" || email === "" || password === ""){
+        alert("Please fill all fields");
+        return;
+    }
+
+    let user = {
+        name:name,
+        email:email,
+        password:password};
+
+    localStorage.setItem(
+        "user",
+        JSON.stringify(user)
+    );
+
+    alert("Registration Successful");
+
+    window.location.href = "login.html";
+}
+
+function loginUser(event){
+
+    event.preventDefault();
+    let email =document.getElementById("loginEmail").value;
+    let password =document.getElementById("loginPassword").value;
+    let storedUser =JSON.parse(localStorage.getItem("user"));
+
+    if(!storedUser){
+        alert("No user found");
+        document.getElementById("loginEmail").value = "";
+        document.getElementById("loginPassword").value = "";
+        return;
+    }
+
+    if(storedUser.email === email && storedUser.password === password){
+        localStorage.setItem(
+            "loggedUser",JSON.stringify(storedUser));
+        alert("Login Successful");
+        document.getElementById("loginEmail").value = "";
+        document.getElementById("loginPassword").value = "";
+        location.reload();
+    }
+
+    else{
+       
+        alert("Invalid Email or Password");
+        document.getElementById("loginEmail").value = "";
+        document.getElementById("loginPassword").value = "";
+    } 
+     
+}
+
+
+function showLoggedUser(){
+    let loggedUser =
+        JSON.parse(localStorage.getItem("loggedUser"));
+
+    if(loggedUser){
+        document.getElementById("welcomeUser").innerText =`Welcome ${loggedUser.name}`;
+    }
+}
+
+showLoggedUser();
+
+
+
+// ================= LOGIN POPUP =================
+
+let userIcon =
+    document.getElementById("user-icon");
+
+let loginPopup =
+    document.querySelector(".user-login");
+
+let loginClose =
+    document.getElementById("login-close");
+
+
+
+// OPEN LOGIN POPUP
+
+userIcon.addEventListener("click", () => {
+
+    loginPopup.classList.add("active-login");
+});
+
+
+
+// CLOSE LOGIN POPUP
+
+loginClose.addEventListener("click", () => {
+
+    loginPopup.classList.remove("active-login");
+});

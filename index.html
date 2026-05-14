@@ -44,6 +44,7 @@
                 <li><a href="contact.html">CONTACT</a></li>
             </div>
             <i class="fa-solid fa-user fa-xl" id="user-icon" style="color: rgb(255, 255, 255);"></i>
+            <h4 id="welcomeUser"></h4>
             <div class="cart-notif-div">
                 <i class="fa-solid fa-bucket fa-xl" id="cart-icon" ></i>
                 <span class="notification">0</span>                    
@@ -84,14 +85,14 @@
         <div class="form-sec-div">
             <form class="form-sec">
                 <label>Email*</label>
-                <input type="text" placeholder="Enter Your Email">
+                <input type="text"id="loginEmail" placeholder="Enter Your Email">
                 <label>Password*</label>
-                <input type="text"placeholder="Enter a Password">
+                <input type="text" id="loginPassword" placeholder="Enter a Password">
                 
             </form>
-            <button  id="signinbtn" >Sign In</button>
+            <button  id="signinbtn"  onclick="loginUser(event)">Sign In</button>
 
-            <h5>Not registered?  <span><a href="">Register here</a></span></h5>
+            <h5>Not registered?  <span><a href="register.html">Register here</a></span></h5>
 
         </div>
     </div>
@@ -333,6 +334,6 @@
         <p>Copyright ©2026 All rights reserved | This template is made with  by Latha</p>
     </footer>
 
-    <script src="effect.js"></script>
+    <script src="./effect.js"></script>
 </body>
 </html>
