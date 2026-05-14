@@ -665,7 +665,8 @@ body{
 }
 .contactus-section{
     background-image: url(./media/rest1.jpg);
-   
+    background-size: cover;
+    width:100%;
     display: flex;
     justify-content: center;
     padding-bottom: 80px;
@@ -822,9 +823,8 @@ body{
     
     justify-content: space-around;
 }
-    
-}
 
+ }
 @media screen and (width < 769px)  {
     
     .section-m1{
@@ -833,6 +833,9 @@ body{
 
     .section-p1 {
     padding: 40px;
+}
+body{
+    width: 100%;
 }
 
     .smalldivs {
@@ -897,6 +900,23 @@ body{
     
 }
 
+.reserve{
+    width:80%;
+   
+    }
+
+   
+
+    .booking>div>label {
+   
+    padding-top: 30px;
+    padding-left: 50px;
+}
+.cart{
+    
+    width:250px;
+    
+}
 }
 
 @media screen and ( width < 450px)  {
@@ -991,7 +1011,7 @@ body{
     left:-100%;
     background-color: white;
     height:100%;
-    width:350px;
+    width:250px;
     box-shadow: -2px 0 10px rgba(0, 0, 0, .1);
     padding: 40px 20px;
     z-index: 100;
@@ -1066,10 +1086,25 @@ body{
     
 }
 
-.scrolled{
-  
-    z-index:9999;
+.contactus-section{
+    width:100%;
 }
-   
+.reserve {
+    width: 100%;
+}
+.booktable {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 130px;
+    font-size: large;
+}
+
+    .booking>div>label {
+    width:80%;
+}
+   .booking{
+    width:100%;
+}
 } 
 
