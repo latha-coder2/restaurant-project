@@ -43,7 +43,7 @@
                 <li><a href="./menu.html">MENU</a></li>
                 <li><a href="contact.html">CONTACT</a></li>
             </div>
-            <i class="fa-solid fa-user fa-xl" id="user-icon" style="color: rgb(255, 255, 255);"></i>
+            <i class="fa-solid fa-user fa-xl" id="user-icon" onclick="toggleUserAction()" style="color: rgb(255, 255, 255);"></i>
             <h4 id="welcomeUser"></h4>
             <div class="cart-notif-div">
                 <i class="fa-solid fa-bucket fa-xl" id="cart-icon" ></i>
@@ -73,7 +73,8 @@
     </section>
     <!-- -------------------------------userlogin------------------ -->
 
-    <div class="user-login">
+     <!-- -------------------------------1. SIDE BAR LOGIN FORM (Unchanged Appearance)------------------ -->
+    <div class="user-login-icon">
         <i class="fa-solid fa-xmark" id="login-close"></i>
         <div class="welcome-sec">
             <h2 class="text-[50px] text-extrabold ">Welcome Back</h2>
@@ -85,20 +86,42 @@
         <div class="form-sec-div">
             <form class="form-sec">
                 <label>Email*</label>
-                <input type="text"id="loginEmail" placeholder="Enter Your Email">
+                <!-- Thani dynamic ID text layout configuration moolama collision thavirka padugirathu -->
+                <input type="text" id="sideEmail" placeholder="Enter Your Email">
                 <label>Password*</label>
-                <input type="text" id="loginPassword" placeholder="Enter a Password">
-                
+                <input type="text" id="sidePassword" placeholder="Enter a Password">
             </form>
-            <button  id="signinbtn"  onclick="loginUser(event)">Sign In</button>
+            <button id="signinbtn" onclick="loginUserFromSidebar(event)">Sign In</button>
 
             <h5>Not registered?  <span><a href="register.html">Register here</a></span></h5>
-
         </div>
     </div>
 
+    <!-- -------------------------------2. GLOBAL ENTRY POPUP MODAL------------------ -->
+    <div id="global-login-popup" class="global-popup-modal">
+        <div class="popup-box-content">
+            <i class="fa-solid fa-xmark" id="global-login-close" onclick="continueAsGuest()"></i>
+            <div class="welcome-sec">
+                <h2 class="text-[50px] font-bold">Welcome Back</h2>
+                <p>Login to continue your food journey</p>
+            </div>
 
+            <div class="form-sec-div">
+                <form class="form-sec">
+                    <label>Email*</label>
+                    <input type="email" placeholder="Enter Your Email" id="loginEmail">
 
+                    <label>Password*</label>
+                    <input type="password" placeholder="Enter Password" id="loginPassword">
+                </form>
+
+                <button id="signinbtn" onclick="loginUser(event)">Sign In</button>
+                <button class="guest-btn" onclick="continueAsGuest()">Continue as Guest</button>
+
+                <h5>Not registered? <span><a href="register.html">Register here</a></span></h5>
+            </div>
+        </div>
+    </div>
     <!-- ----------------------cart------------------------- -->
     <div class="cart">
         <h2 class="cart-title">Your Cart</h2>

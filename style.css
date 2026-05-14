@@ -139,7 +139,7 @@ body{
     cursor: pointer;
 }
 
-.user-login{
+.user-login-icon{
     
     position:fixed;
     top:0;
@@ -162,7 +162,7 @@ body{
     cursor:pointer;
 }
 
-.user-login.active{
+.user-login-icon.active{
     right:0;
 }
 .welcome-sec{
@@ -1085,7 +1085,7 @@ body{
     width: 250px;
 }
 
-.user-login {
+.user-login-icon {
     
     width: 250px;
     
@@ -1122,7 +1122,7 @@ body{
     justify-content:center;
     align-items:center;
 
-    background:#f5f5f5;
+    background: linear-gradient(rgba(15, 23, 43, .9), rgba(15, 23, 43, .9)), url(./media/bg-hero.jpg);
 
     padding:40px 20px;
 }
@@ -1193,6 +1193,7 @@ body{
     font-size:20px;
     cursor:pointer;
     margin-top:10px;
+
 }
 
 
@@ -1200,7 +1201,7 @@ body{
 
 .register-bottom-text{
     text-align:center;
-    margin-top:20px;
+    margin-top:10px;
     font-size:18px;
 }
 
@@ -1249,32 +1250,35 @@ body{
 }
 
 
-.user-login{
-    position:fixed;
-    top:0;
-    right:-100%;
-    width:400px;
-    height:100vh;
-    background:white;
-    z-index:1000;
-    transition:0.4s ease;
-    padding:30px;
-    overflow:auto;
+.global-popup-modal {
+    display: none; 
+    position: fixed !important;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0, 0, 0, 0.7) !important; 
+    z-index: 999999 !important; /* Stand out over sidebar content layout positioning */
+    justify-content: center;
+    align-items: center;
 }
 
-.user-login.active-login{
-    right:0;
+/* Visibility trigger rule toggles */
+.global-popup-modal.popup-active {
+    display: flex !important;
 }
 
+/* Central positioning card style element */
+.popup-box-content {
+    background-color: white !important;
+    padding: 35px !important;
+    border-radius: 12px !important;
+    width: 90%;
+    max-width: 420px;
+    position: relative;
+    box-shadow: 0px 10px 30px rgba(0,0,0,0.5) !important;
+    text-align: center;
+}
 
-#login-close{
-
-    position:absolute;
-
-    top:20px;
-    right:20px;
-
-    font-size:30px;
-
-    cursor:pointer;
+/* Reset user login layout to maintain sidebar isolation standard defaults */
+.user-login-icon {
+    z-index: 99999 !important;
 }
