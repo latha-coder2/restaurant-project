@@ -184,6 +184,31 @@ document.addEventListener("DOMContentLoaded", () => {
         }
 
     });
+
+    const orderBtn = document.querySelector(".orderbtn"); 
+
+    orderBtn.addEventListener("click", () => {
+        const currentcartboxes = cartcontent.querySelectorAll(".cart-box");
+
+        if (currentcartboxes.length === 0) {
+            alert("Your cart is empty! Add some items first.");
+            return;
+        }
+
+        alert("Order Placed Successfully!");
+
+        currentcartboxes.forEach(cartBox => {
+            cartBox.remove();
+        });
+
+        updateCartnotification(-cartcount);
+
+       const totalPriceElement = document.querySelector(".total-price");
+        if (totalPriceElement) {
+            totalPriceElement.textContent = "$0.00";
+        }
+});
+
 // ===== REGISTER FUNCTION =====
 
 function registerUser(){
@@ -274,7 +299,7 @@ function syncUserInterface() {
         }
         if(mainUserIcon) mainUserIcon.style.color = "#ffffff"; 
     } else {
-        if(welcomeUser) welcomeUser.innerText = "";
+        if(welcomeUser) welcomeUser.innerText = "Welcome Guest";
         if(mainUserIcon) mainUserIcon.style.color = "white"; 
     }
 }
@@ -288,8 +313,13 @@ function handleCustomLogout() {
     if (globalPopup) globalPopup.classList.add("popup-active");
 }
 
-// Global popup-il continue as guest adithal box mattum close aagum, sidebar system-ah disturb pannadhu
+
 function continueAsGuest() {
+    const welcomeuser = document.getElementById("welcomeUser");
+    if(welcomeuser) {
+            welcomeuser.innerText = `Welcome Guest`;
+            welcomeuser.style.color = "#ffffff";
+        }
     const globalPopup = document.getElementById("global-login-popup");
     if (globalPopup) globalPopup.classList.remove("popup-active");
 }

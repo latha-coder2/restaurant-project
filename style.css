@@ -1282,3 +1282,11 @@ body{
 .user-login-icon {
     z-index: 99999 !important;
 }
+
+.guest-btn{
+    cursor: pointer;
+}
+
+.guest-btn:hover{
+    color: #d67307;
+}

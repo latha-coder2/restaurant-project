@@ -45,6 +45,7 @@
                 <li><a  href="contact.html">CONTACT</a></li>
             </div>
             <i class="fa-solid fa-user fa-xl" id="user-icon" style="color: rgb(255, 255, 255);"></i>
+            <h4 id="welcomeUser"></h4>
             <div class="cart-notif-div">
                 <i class="fa-solid fa-bucket fa-xl" id="cart-icon" ></i>
                 <span class="notification">0</span>                    
@@ -77,15 +78,14 @@
         <div class="form-sec-div">
             <form class="form-sec">
                 <label>Email*</label>
-                <input type="text" placeholder="Enter Your Email">
+                <!-- Thani dynamic ID text layout configuration moolama collision thavirka padugirathu -->
+                <input type="text" id="sideEmail" placeholder="Enter Your Email">
                 <label>Password*</label>
-                <input type="text"placeholder="Enter a Password">
-                
+                <input type="text" id="sidePassword" placeholder="Enter a Password">
             </form>
-            <button  id="signinbtn" >Sign In</button>
+            <button id="signinbtn" onclick="loginUserFromSidebar(event)">Sign In</button>
 
-            <h5>Not registered?  <span><a href="">Register here</a></span></h5>
-
+            <h5>Not registered?  <span><a href="register.html">Register here</a></span></h5>
         </div>
     </div>
 
